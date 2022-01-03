@@ -102,3 +102,11 @@ go_repository(
     version = "v2.3.0",
 )
 
+
+container_pull(
+    name = "envoy_base",
+    digest = "sha256:19f3b361450e31f68b46f891b0c8726041739f44ab9b90aecbca5f426c0d2eaf",
+    registry = "index.docker.io",
+    repository = "envoyproxy/envoy-alpine",
+)
+

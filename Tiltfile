@@ -22,3 +22,8 @@ bazel_build('bazel/greeter', '//greeter:greeter_service_image', 'greeter_service
 k8s_yaml(bazel_k8s("//greeter:greeter-server"))
 k8s_resource('greeter', port_forwards=5000)
 
+
+k8s_yaml(bazel_k8s("//ingress:ingress-server"))
+bazel_build('bazel/ingress', '//ingress:envoy_ingress_image', 'envoy_ingress_image')
+k8s_resource('ingress', port_forwards=['8080:8080', port_forward(5001, 5000, name='localhost:5001(grpc)'), port_forward(9901, 9901, name='localhost:9901(admin)')])
+
