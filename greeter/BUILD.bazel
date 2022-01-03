@@ -50,4 +50,3 @@ k8s_object(
     # A template of a Kubernetes Deployment object yaml.
     template = ":k8s/greeter-deployment.yaml",
 )
-
