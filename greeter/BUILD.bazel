@@ -40,3 +40,14 @@ go_image(
     goos = "linux",
     visibility = ["//visibility:public"],
 )
+
+load("@io_bazel_rules_k8s//k8s:object.bzl", "k8s_object")
+
+k8s_object(
+    name = "greeter-server",
+    kind = "deployment",
+
+    # A template of a Kubernetes Deployment object yaml.
+    template = ":k8s/greeter-deployment.yaml",
+)
+

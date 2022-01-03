@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: greeter
+  namespace: greeter
+  labels:
+    app: greeter
+spec:
+  selector:
+    matchLabels:
+      app: greeter
+  template:
+    metadata:
+      labels:
+        app: greeter
+    spec:
+      containers:
+        - name: greeter
+          image: bazel/greeter:greeter_service_image
+          imagePullPolicy: Never
+          ports:
+            - containerPort: 5000
+
