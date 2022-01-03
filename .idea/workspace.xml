@@ -20,9 +20,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6186f037-6027-4cc5-83ee-61ab33acc365" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/Tiltfile" beforeDir="false" afterPath="$PROJECT_DIR$/Tiltfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WORKSPACE" beforeDir="false" afterPath="$PROJECT_DIR$/WORKSPACE" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/k8s/namespace.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/k8s/namespace.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/greeter/proto/v1/package.go" beforeDir="false" afterPath="$PROJECT_DIR$/greeter/proto/v1/package.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ingress/envoy.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/ingress/envoy.yaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

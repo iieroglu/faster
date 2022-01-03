@@ -56,19 +56,6 @@ static_resources:
                         always_print_primitive_fields: true
                         always_print_enums_as_ints: false
                         preserve_proto_field_names: true
-                  - name: envoy.ext_authz
-                    typed_config:
-                      "@type": type.googleapis.com/envoy.extensions.filters.http.ext_authz.v3.ExtAuthz
-                      grpc_service:
-                        # Envoy will call "Check" method in guardian to
-                        # request authentication.
-                        envoy_grpc: { cluster_name: greeter.greeter }
-                        timeout: 5s
-#                      transport_api_version: V3
-                      include_peer_certificate: true
-                      failure_mode_allow: true
-                      status_on_error:
-                        code: 503
                   # Traces for healthcheck requests should not be sampled.
                   - name: envoy.health_check
                     typed_config:
