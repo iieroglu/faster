@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: faster
+---
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: greeter
+
